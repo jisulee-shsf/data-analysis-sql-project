@@ -10,13 +10,14 @@
 #### 03. RDBMS(Relational Database Management System)
 - IBM 산호세 연구소의 에드거 F. 커드가 도입한 관계형 모델을 기반으로 하는 데이터베이스 관리 시스템(DBMS)
 - 카테고리별로 테이블을 분리해 중복 데이터 등의 문제를 최소화하고, 각 테이블의 고유값을 '관계'로 맺어 데이터를 추출할 수 있는 기능 제공
+- 비관계형 데이터베이스인 NoSQL(Not only SQL, non SQL, non Relational) 참고
 ####  
-#### 04. SQL(Structured Query Language, Sequel)
+#### 04. SQL(Structured Query Language / Sequel)
 - SQL는 관계형 데이터베이스 관리 시스템(RDBMS)의 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어
 - Python 등과 같이 다양한 분야에서 활용이 가능한 '범용 프로그래밍 언어'보다는, HTML처럼 특정 사용처에서 사용되는 '도메인 언어'로 구분됨
 ####  
-#### 05. NoSQL(non SQL, non Relational)
-- 전통적인 관계형 데이터베이스 보다 덜 제한적인 일관성 모델을 이용하는 데이터의 저장 및 검색을 위한 매커니즘을 제공
+#### 05.
+- 
 ## 
 #### ► [01_select_from_limit_220925]  
 - SELECT / FROM / LIMIT 활용 실습 및 HackerRank 문제 풀이 진행  
