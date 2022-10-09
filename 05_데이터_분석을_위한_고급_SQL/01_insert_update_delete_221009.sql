@@ -33,7 +33,7 @@ Note that you must write a single update statement, do not write any select stat
 -- A1-1. 기존 코드
 SELECT *
 UPDATE Salary 
-set CASE
+SET CASE
          WHEN sex = 'm' THEN  'f'
          WHEN sex = 'f' THEN  'm'
          ELSE NULL
