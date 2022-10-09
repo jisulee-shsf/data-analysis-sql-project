@@ -18,15 +18,13 @@ SET column_name = update_value
 WHERE specific_condition;
 
 -- Q3-1. DELETE) 전체 테이블 데이터 삭제하기
-DELETE FROM tabel_name;
+DELETE FROM table_name;
 
 -- Q3-2. DELETE) 테이블 내에 조건 맞는 행 데이터 삭제하기
 DELETE FROM table_name
 WHERE specific_condition;
 
-
 -- [Section 2] LeetCode
-
 
 -- Q. 627. Swap Salary)
 /* Write an SQL query to swap all 'f' and 'm' values (i.e., change all 'f' values to 'm' and vice versa) 
