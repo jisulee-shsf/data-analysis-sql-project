@@ -10,8 +10,19 @@
 - ✔︎ 다중행 서브쿼리 - 주요 연산자 IN을 사용해, 서브쿼리의 결괏값이 다수의 값을 가진 1개의 컬럼인 쿼리문 작성
 - ✔︎ 다중 컬럼 서브쿼리 - 주요 연산자 IN을 사용해, 서브쿼리의 결괏값이 다수의 값을 가진 n개의 컬럼인 쿼리문 작성
 ##  
-####  USE / SELECT & FROM
+#### ► [02_from_inline_view_subquery_221007]  
+- Inline View SubQuery인 FROM절의 서브쿼리를 WITH 구문 사용 여부에 따라 출력 실습
+####  
+- ✔︎ WITH 구문의 경우, 다소 복잡한 FROM절의 서브쿼리를 임시 테이블로 설정해 쿼리의 가독성을 높이고 재사용의 장점을 가짐
+- ✔︎ WITH 구문으로 생성된 임시 테이블은 기존 테이블과 동일하게 JOIN 등의 다양한 구문 적용 가능
+####  WITH
 ``` SQL
-USE database_name;
+WITH alias_name1 AS (
+...
+) alias_nameN AS (
+...
+);
+
+SELECT * FROM alias_nameN;
 ```
 ####
