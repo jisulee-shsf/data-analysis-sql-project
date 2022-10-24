@@ -4,9 +4,9 @@
 SELECT customer_id
      , DATE_FORMAT(MIN(order_timestamp), '%Y-%m-%d') AS first_order_date_at
      , DATE_FORMAT(MAX(order_timestamp), '%Y-%m-%d') AS last_order_date_at
+FROM orders
 WHERE order_timestamp >= '2021-10-01'
   AND order_timestamp < '2021-11-01'
-FROM orders
 GROUP BY customer_id;
 
 -- 1-2. 응용 연습문제
