@@ -1,6 +1,6 @@
 # products에서 category_id별 price가 2021년 10월 매출액에서 차지하는 비율 출력하기 
 # category_id / oct_sales / price / price_pct 출력
-# price_pct는 높은 순으로 정렬하여 상위 30개 값만 출력
+# price_pct가 높은 순으로 정렬한 후, 상위 30개 값만 출력
 
 -- 1-1. FROM절 서브쿼리
 SELECT table1.category_id
@@ -17,7 +17,7 @@ INNER JOIN products table2 ON table1.category_id = table2.category_id
 ORDER BY 4 DESC
 LIMIT 30;
 
--- 1-2. FROM절 서브쿼리 - WITH문 사용
+-- 1-2. FROM절 서브쿼리 - WITH 구문 사용
 WITH table1 AS (
 SELECT category_id
      , SUM(price) AS oct_sales
