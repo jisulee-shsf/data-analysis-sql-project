@@ -20,7 +20,7 @@ FROM orders
 WHERE order_timestamp >= '2021-10-01'
   AND order_timestamp < '2021-11-01'
 GROUP BY order_date_at 
-ORDER BY fail_case DESC 
+ORDER BY fail_case DESC;
 
 -- 2-1. WHERE절 서브쿼리 - 단일행 서브쿼리
 # products에서 물품의 평균 price보다 높은 price의 product_name 출력하기
