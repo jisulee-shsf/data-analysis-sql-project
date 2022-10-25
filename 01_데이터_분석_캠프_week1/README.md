@@ -33,7 +33,7 @@ SELECT * FROM alias_nameN;
 <br/><br/>
 ## 💁🏻‍♀️ Studying in advance
 #### 1. 그로스 해킹(Growth Hacking)
-- Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것  
+- Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
 - 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
 - 그로스 해킹을 하기 위한 중요한 4가지 요소는 지표, 분석 환경, 프로세스, 문화로 구성됨
 #### 2. AARRR
@@ -46,12 +46,12 @@ SELECT * FROM alias_nameN;
 
 #### 3-1. Retention
 - 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나이며, 사용자가 서비스의 핵심 가치를 꾸준히 경험하며 지속적으로 재사용하는 비율
-- Retention을 측정하는 대표적인 방법: Classic Retiention, Rolling Retention, Range Retention
+- Retention을 측정하는 대표적인 방법: Classic Retiention / Rolling Retention / Range Retention
 #### 3-2. Classic Retiention / Rolling Retention / Range Retention / Retiention Chart & Retiention Curve
 - Classic Retiention / Day-N Retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
 - Rolling Retention / Unbounded Retention: 특정 기간에 서비스로 재방문한 사용자의 비율 계산
 - Range Retention / Bracket Retention: 사용자 중, 어느 정도 인원이 서비스를 이탈했는가에 초점을 맞춘 계산
-- Retiention Chart & Retiention Curve: 사용자의 Retiention 변화 측정
+- Retiention Chart & Retiention Curve: 사용자의 Retiention 변화 측정 방법
 #### 3-3. DAU / WAU / MAU / Stickiness
 - DAU(Daily Active User): 일별 활성 사용자 수
 - WAU(Weekly Active User): 주별 활성 사용자 수
