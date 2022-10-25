@@ -18,7 +18,7 @@
 ####
 ## Reference
 - [datarian] datarian SQL 데이터 분석 캠프 실전반 10기 학습 내용
-- https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+- https://www.w3schools.com/
 - https://www.hackerrank.com/
 - https://leetcode.com/
 ####
