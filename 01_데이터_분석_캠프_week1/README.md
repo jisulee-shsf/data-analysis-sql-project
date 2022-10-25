@@ -17,8 +17,11 @@
 - ✔︎ WITH 구문으로 생성된 임시 테이블은 기존 테이블과 동일하게 JOIN 등의 다양한 구문 적용 가능
 ##  
 #### ► [03_select_scala_subquery_221007]  
-- 
-
+- Scala SubQuery인 SELECT절의 서브쿼리를 WHERE 조건식 여부에 따라 출력 실습
+####  
+- ✔︎ 
+- ✔︎ 
+##
 ####  WITH
 ``` SQL
 WITH alias_name1 AS (
