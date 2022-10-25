@@ -45,8 +45,8 @@ SELECT * FROM alias_nameN;
 - R(Referral): 전파 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
 
 #### 3-1. Retention
-- 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나이며, 사용자가 서비스의 핵심 가치를 꾸준히 경험하며 지속적으로 재사용하는 비율
-- Retention을 측정하는 대표적인 방법: Classic Retiention / Rolling Retention / Range Retention
+- 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나 / 비용대비 개선 효과가 크고, 복리 효과로 매출 성장에 기여
+- Retention을 측정하는 대표적인 방법은 측정 기준에 따라 Classic Retiention / Rolling Retention / Range Retention로 구분
 #### 3-2. Classic Retiention / Rolling Retention / Range Retention / Retiention Chart & Retiention Curve
 - Classic Retiention / Day-N Retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
 - Rolling Retention / Unbounded Retention: 특정 기간에 서비스로 재방문한 사용자의 비율 계산
