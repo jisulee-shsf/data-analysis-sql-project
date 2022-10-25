@@ -1,5 +1,5 @@
 ####
-## 01. 데이터 분석 캠프 week1
+## 01. 데이터 분석 캠프 Week1
 #### ► [01_where_nested_subquery_221007]
 - 연습 문제 풀이(한 달간 고객별 첫 주문 및 마지막 주문 일자 / 주문 일자별 배송 일자에 따른 성공 및 실패 케이스 수 출력)
 - Nested SubQuery인 WHERE절의 단일행 ・ 다중행 ・ 다중 컬럼 서브쿼리 출력 실습 
@@ -31,7 +31,7 @@ WITH alias_name1 AS (
 SELECT * FROM alias_nameN;
 ```
 <br/><br/>
-## 💁🏻‍♀️ Studying in advance
+## 💁🏻‍♀️ Week2 사전 예습
 #### 1. 그로스 해킹(Growth Hacking)
 - Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
 - 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
