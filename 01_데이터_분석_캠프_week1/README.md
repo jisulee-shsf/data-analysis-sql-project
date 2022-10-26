@@ -24,9 +24,9 @@
 ``` SQL
 WITH alias_name1 AS (
 ...
-) alias_nameN AS (
+), alias_nameN AS (
 ...
-);
+)
 
 SELECT * FROM alias_nameN;
 ```
