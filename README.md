@@ -10,7 +10,8 @@
 - 03_select_scala_subquery_221007
 ####
 #### ► [02_데이터_분석_캠프_week2]
--
+- 01_classic_retention_221014
+- 02_rolling_retention_221014
 ####
 #### ► [03_데이터_분석_캠프_week3]
 -
