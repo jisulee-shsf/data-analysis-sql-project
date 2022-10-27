@@ -36,12 +36,12 @@ test
 - R(Retention) - 사용자 유지 → Activation 과정으로 경험한 서비스의 핵심 가치를 꾸준히 경험하도록 하는 것
 - R(Revenue) - 매출 → 서비스가 매출로 돌아오는가?
 - R(Referral) - 전파 / 추천 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
-#### 3-1. 클래식 리텐션(Classic Retiention) / 롤링 리텐션(Rolling Retention) / 범위 리텐션(Range Retention)
+#### 3-1. 클래식 리텐션(Classic Retention) / 롤링 리텐션(Rolling Retention) / 범위 리텐션(Range Retention)
 - 제품 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나인 리텐션을 분석하는 대표적인 방법 
-- 클래식 리텐션(Classic / N-Day Retiention) - 최초 사용일로부터 N일 후에 서비스로 재방문한 사용자 비율 계산
+- 클래식 리텐션(Classic / N-Day Retention) - 최초 사용일로부터 N일 후에 서비스로 재방문한 사용자 비율 계산
 - 롤링 리텐션(Rolling / Unbounded Retention) - 특정 일자를 포함해 그 이후 한 번이라도 서비스에 재방문한 사용자 비율 계산
 - 범위 리텐션(Range / Bracket Retention) - 설정한 범위 기간 내에 서비스에 재방문한 사용자 비율 계산
-#### 3-2. 코호트 분석(Cohort Analysis) / 리텐션 차트(Retiention Chart)
+#### 3-2. 코호트 분석(Cohort Analysis) / 리텐션 차트(Retention Chart)
 - 코호트 분석(Cohort Analysis) - 가입 시기별 등, 특정 기간에 공통된 특성이나 경험을 갖는 동질 사용자를 그룹으로 나누어 분석하는 것
 - 리텐션 차트(Retiention Chart) - 코호트 분석(Cohort Analysis)을 리텐션 분석에 응용해 사용자의 리텐션 변화를 측정하는 것
 #### 3-3. DAU / WAU / MAU / Stickiness
