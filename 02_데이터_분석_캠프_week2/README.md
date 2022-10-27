@@ -5,12 +5,17 @@
 ####
 - ✔︎  
 ``` SQL
-test
+SELECT first_order_month
+     , COUNT(DISTINCT customer_id) AS month0
+     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
+FROM records_preprocessed
+GROUP BY 1;
 ```
-|test|test|test|test|test|
-|:---:|:---:|:---:|:---:|:---:|
-|test|test|test|test|test|
-|test|test|test|test|test|
+|first_order_month|month0|month1|
+|:---:|:---:|:---:|
+|2020-01-01|67|3|
+|2020-02-01|50|6|
+|2020-03-01|101|13|
 ##
 #### ► [02_rolling_retention_221014]
 - 
@@ -25,7 +30,7 @@ test
 |test|test|test|test|test|
 
 <br/><br/>
-## 💁🏻‍♀️ TIL
+## 👩🏻‍💻 Note-taking
 #### 1. 그로스 해킹(Growth Hacking)
 - Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
 - 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
