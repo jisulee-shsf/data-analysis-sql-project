@@ -30,35 +30,3 @@ WITH alias_name1 AS (
 
 SELECT * FROM alias_nameN;
 ```
-<br/><br/>
-## 💁🏻‍♀️ Week2 사전 예습
-#### 1. 그로스 해킹(Growth Hacking)
-- Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
-- 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
-- 그로스 해킹을 하기 위한 중요한 4가지 요소는 지표, 분석 환경, 프로세스, 문화로 구성됨
-#### 2. AARRR
-- 사용자의 lifecycle을 기반으로 stage를 구분해 핵심 지표를 효율적으로 분석하고 관리하는 그로스 해킹(Growth Hacking)의 대표 프레임워크 
-- A(Acquisition): 사용자 획득 → 사용자를 서비스로 데려오는 것
-- A(Activation): 사용자 활성화 → Acquisition으로 데려온 사용자가 서비스의 핵심 가치를 경험했는가? 
-- R(Retention): 사용자 유지 → Activation 과정으로 경험한 서비스의 핵심 가치를 꾸준히 경험하도록 하는 것
-- R(Revenue): 매출 → 서비스가 매출로 돌아오는가?
-- R(Referral): 전파 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
-
-#### 3-1. Retention
-- 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나 / 비용대비 개선 효과가 크고, 복리 효과로 매출 성장에 기여
-- Retention을 측정하는 대표적인 방법은 측정 기준에 따라 Classic Retiention / Rolling Retention / Range Retention로 구분
-#### 3-2. Classic Retiention / Rolling Retention / Range Retention / Retiention Chart & Retiention Curve
-- Classic Retiention / Day-N Retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
-- Rolling Retention / Unbounded Retention: 특정 기간에 서비스로 재방문한 사용자의 비율 계산
-- Range Retention / Bracket Retention: 사용자 중, 어느 정도 인원이 서비스를 이탈했는가에 초점을 맞춘 계산
-- Retiention Chart & Retiention Curve: 사용자의 Retiention 변화 측정 방법
-#### 3-3. DAU / WAU / MAU / Stickiness
-- DAU(Daily Active User): 일별 활성 사용자 수
-- WAU(Weekly Active User): 주별 활성 사용자 수
-- MAU(Monthly Active User): 월별 활성 사용자 수
-- Stickiness : 사용자 고착도
-
-#### Reference
-- [Inflearn] [그로스해킹 - 데이터와 실험을 통해 성장하는 서비스를 만드는 방법](https://www.inflearn.com/course/%EA%B7%B8%EB%A1%9C%EC%8A%A4%ED%95%B4%ED%82%B9-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%A4%ED%97%98-%EC%84%B1%EC%9E%A5-%EC%84%9C%EB%B9%84%EC%8A%A4/)  
-- [datarian] [datarian 데이터 분석 블로그](https://www.datarian.io/blog)
-- [brunch] [Cross-functional이란?](https://brunch.co.kr/@youngstone89/6)
