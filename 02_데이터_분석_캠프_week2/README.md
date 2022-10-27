@@ -1,39 +1,9 @@
 ####
 ## 02. 데이터 분석 캠프 week2
 #### ► [01_classic_retention_221014 / 02_rolling_retention_221014]
-- 그로스 해킹(Growth Hacking) ・ AARRR 해적 지표(Pirate Metrics) ・ 코호트 분석(Cohort Analysis)을 통한 리텐션 관련 이론 학습
+- 그로스 해킹(Growth Hacking) ・ AARRR 해적 지표(Pirate Metrics) ・ 코호트 분석(Cohort Analysis) 등 리텐션 관련 이론 학습
 - SQL을 활용한 클래식 리텐션(Classic Retention) ・ 롤링 리텐션(Rolling Retention) 구현 실습
 ##
-#### Classic Retention
-``` SQL
-SELECT first_order_month
-     , COUNT(DISTINCT customer_id) AS month0
-     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
-FROM records_preprocessed
-GROUP BY 1;
-```
-|first_order_month|month0|month1|
-|:---:|:---:|:---:|
-|2020-01-01|67|3|
-|2020-02-01|50|6|
-|2020-03-01|101|13|
-
-#### Rolling Retention
-``` SQL
-SELECT first_order_month
-    , COUNT(DISTINCT customer_id) AS month0
-    , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) <= last_order_month THEN customer_id END) AS month1
-FROM records_preprocessed
-GROUP BY 1;
-```
-|first_order_month|month0|month1|
-|:---:|:---:|:---:|
-|2020-01-01|67|54|
-|2020-02-01|50|47|
-|2020-03-01|101|83|
-
-<br/><br/>
-## 👩🏻‍💻 Note-taking
 #### 1. 그로스 해킹(Growth Hacking)
 - Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
 - 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
@@ -63,3 +33,31 @@ GROUP BY 1;
 - [datarian 데이터 분석 블로그](https://www.datarian.io/blog)
 - [리텐션을 측정하는 세 가지 방법](https://blog.ab180.co/posts/retention-series-3-1)
 - [Cross-functional이란?](https://brunch.co.kr/@youngstone89/6)
+##
+#### Classic Retention
+``` SQL
+SELECT first_order_month
+     , COUNT(DISTINCT customer_id) AS month0
+     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
+FROM records_preprocessed
+GROUP BY 1;
+```
+|first_order_month|month0|month1|
+|:---:|:---:|:---:|
+|2020-01-01|67|3|
+|2020-02-01|50|6|
+|2020-03-01|101|13|
+
+#### Rolling Retention
+``` SQL
+SELECT first_order_month
+    , COUNT(DISTINCT customer_id) AS month0
+    , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) <= last_order_month THEN customer_id END) AS month1
+FROM records_preprocessed
+GROUP BY 1;
+```
+|first_order_month|month0|month1|
+|:---:|:---:|:---:|
+|2020-01-01|67|54|
+|2020-02-01|50|47|
+|2020-03-01|101|83|
