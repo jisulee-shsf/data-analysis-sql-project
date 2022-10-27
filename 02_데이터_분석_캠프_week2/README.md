@@ -1,7 +1,7 @@
 ####
 ## 02. 데이터 분석 캠프 week2
 #### ► [01_classic_retention_221014]
-- 성공적인 사업 구축에 필요한 5가지 요소인 AARRR 또는 해적 지표(Pirate Metrics) 이론 학습
+- 성공적인 사업 구축에 필요한 5가지 요소인 AARRR 및 Cohort 
 ####
 - ✔︎  
 ``` SQL
@@ -26,21 +26,20 @@ test
 
 <br/><br/>
 ## 💁🏻‍♀️ TIL
-#### 1. Growth hacking
+#### 1. 그로스 해킹(Growth Hacking)
 - Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
 - 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
-#### 2. AARRR
-- 사용자의 lifecycle을 기반으로 stage를 구분해 핵심 지표를 효율적으로 분석하고 관리하는 Growth hacking의 대표 프레임워크 
+#### 2. AARRR / 해적 지표(Pirate Metrics)
+- 사용자의 lifecycle을 기반으로 stage를 구분해 핵심 지표를 효율적으로 분석하고 관리하는 그로스 해킹(Growth Hacking)의 대표 프레임워크 
 - A(Acquisition): 사용자 획득 → 사용자를 서비스로 데려오는 것
 - A(Activation): 사용자 활성화 → Acquisition으로 데려온 사용자가 서비스의 핵심 가치를 경험했는가? 
 - R(Retention): 사용자 유지 → Activation 과정으로 경험한 서비스의 핵심 가치를 꾸준히 경험하도록 하는 것
 - R(Revenue): 매출 → 서비스가 매출로 돌아오는가?
-- R(Referral): 전파 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
-#### 3-1. Retention
-- 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나 / 비용대비 개선 효과가 크고, 복리 효과로 매출 성장에 기여
-- Retention을 분석하는 대표적인 방법은 측정 기준에 따라 Classic retiention / Rolling retention / Range retention로 구분
+- R(Referral): 전파 / 추천 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
+#### 3-1. 클래식 리텐션(Classic Retiention) / 롤링 리텐션(Rolling Retention) / 범위 리텐션(Range Retention)
+- 제품 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나인 Retention을 분석하는 대표적인 방법 
 #### 3-2. Classic retiention / Rolling retention / Range retention
-- Classic retiention / Day-N retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
+- Classic retiention / N-Day retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
 - Rolling retention / Unbounded retention: 특정 기간에 서비스로 재방문한 사용자의 비율 계산
 - Range retention / Bracket retention: 사용자 중, 어느 정도 인원이 서비스를 이탈했는가에 초점을 맞춘 계산
 #### 3-3. Cohort analysis / Retiention chart & Retiention curve
