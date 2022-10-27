@@ -37,15 +37,14 @@ test
 - R(Revenue): 매출 → 서비스가 매출로 돌아오는가?
 - R(Referral): 전파 / 추천 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
 #### 3-1. 클래식 리텐션(Classic Retiention) / 롤링 리텐션(Rolling Retention) / 범위 리텐션(Range Retention)
-- 제품 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나인 Retention을 분석하는 대표적인 방법 
-#### 3-2. Classic retiention / Rolling retention / Range retention
-- Classic retiention / N-Day retiention: 특정 일자에 서비스로 재방문한 사용자의 비율 계산
-- Rolling retention / Unbounded retention: 특정 기간에 서비스로 재방문한 사용자의 비율 계산
-- Range retention / Bracket retention: 사용자 중, 어느 정도 인원이 서비스를 이탈했는가에 초점을 맞춘 계산
-#### 3-3. Cohort analysis / Retiention chart & Retiention curve
-- Cohort analysis: 가입 시기별 등, 특정 기간에 공통된 특성이나 경험을 갖는 동질 사용자를 그룹으로 나누어 분석하는 하는 것
-- Retiention chart & Retiention curve: Cohort analysis를 Retention analysis에 응용해 사용자 Retiention 변화를 측정하는 것
-#### 3-4. DAU / WAU / MAU / Stickiness
+- 제품 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나인 리텐션을 분석하는 대표적인 방법 
+- 클래식 리텐션(Classic retiention / N-Day retiention): 특정 일자에 서비스로 재방문한 사용자의 비율 계산
+- 롤링 리텐션(Rolling retention / Unbounded retention): 특정 기간에 서비스로 재방문한 사용자의 비율 계산
+- 범위 리텐션(Range retention / Bracket retention): 사용자 중, 어느 정도 인원이 서비스를 이탈했는가에 초점을 맞춘 계산
+#### 3-2. 코호트 분석(Cohort Analysis) / 리텐션 차트(Retiention Chart)
+- 코호트 분석(Cohort Analysis): 가입 시기별 등, 특정 기간에 공통된 특성이나 경험을 갖는 동질 사용자를 그룹으로 나누어 분석하는 것
+- 리텐션 차트(Retiention Chart): 코호트 분석(Cohort Analysis)을 리텐션 분석에 응용해 사용자의 리텐션 변화를 측정하는 것
+#### 3-3. DAU / WAU / MAU / Stickiness
 - DAU(Daily Active User): 일별 활성 사용자 수
 - WAU(Weekly Active User): 주별 활성 사용자 수
 - MAU(Monthly Active User): 월별 활성 사용자 수
