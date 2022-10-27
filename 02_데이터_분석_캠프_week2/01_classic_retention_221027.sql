@@ -3,7 +3,7 @@ WITH order_stats AS (
 SELECT customer_id
      , MIN(order_date) AS first_order_date
      , MAX(order_date) AS last_order_date
-     , COUNT(distinct order_id) AS cnt_orders
+     , COUNT(DISTINCT order_id) AS cnt_orders
      , ROUND(SUM(sales), 3) AS sum_sales
 FROM records
 GROUP BY 1
@@ -16,7 +16,7 @@ WITH order_stats AS (
 SELECT customer_id
      , MIN(order_date) AS first_order_date
      , MAX(order_date) AS last_order_date
-     , COUNT(distinct order_id) AS cnt_orders
+     , COUNT(DISTINCT order_id) AS cnt_orders
      , ROUND(SUM(sales), 3) AS sum_sales
 FROM records
 GROUP BY 1
@@ -39,10 +39,10 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 2-2. 첫 구매한 달 이후 다음달에 재주문한 고객 수 출력하기 - IF / CASE WHEN
+-- 2-2. 첫 구매한 달 이후 다음달에 재주문한 고객 수 출력하기 - 단일 IF / 단일 CASE WHEN
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
-     , COUNT(DISTINCT IF(DATE_ADD(first_order_month, INTERVAL 1 month) = order_month, customer_id, null)) AS month1
+     , COUNT(DISTINCT IF(DATE_ADD(first_order_month, INTERVAL 1 month) = order_month, customer_id, NULL)) AS month1
 FROM records_preprocessed
 GROUP BY 1;
 
@@ -52,7 +52,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 3-1. 첫 구매한 달 이후 재주문 고객 수 출력하기 - CASE WHEN
+-- 3-1. 첫 구매한 달 이후 재주문 고객 수 출력하기 - 다중 CASE WHEN
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
      , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
@@ -86,7 +86,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 3-3. 최종 	클래식 리텐션 출력하기
+-- 3-3. 최종 클래식 리텐션 출력하기
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
      , FORMAT(COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) * 100 / COUNT(DISTINCT customer_id), 2) AS month1
