@@ -2,7 +2,7 @@
 ## 03. 데이터 분석 캠프 week3
 #### ► [01_funnel_analysis_01_221030]
 - 퍼널 분석(Funnel Analysis) ・ 세션(Session) 관련 이론 학습
-- SQL을 활용한 세션별 퍼널 전환율(Conversion rate) 계산 실습
+- SQL을 활용한 세션별 퍼널 전환율(Conversion Rate) 계산 실습
 ##
 #### 퍼널 분석(Funnel Analysis)
 - 사용자가 설계된 사용자 경험 루트에 유입된 후, 최종 목적지까지 잘 도착했는지 주요 단계별로 나누어 살펴보는 사용자 분석 방법
