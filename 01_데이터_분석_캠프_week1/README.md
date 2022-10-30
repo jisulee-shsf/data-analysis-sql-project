@@ -20,6 +20,18 @@
 - ✔︎ SELECT절 서브퀴리의 결괏값은 1개의 데이터 값만 출력 가능하므로, GROUP BY의 기준 컬럼과 집계 함수를 출력할 수 없음
 - ✔︎ SELECT절 서브퀴리에 묶음 기준 컬럼과 집계 함수 출력이 함께 필요한 경우, WHERE 조건으로 연결해 출력 가능함
 ##
+#### Nested SubQuery
+``` SQL
+SELECT column_name(s)
+FROM table_name
+WHERE column_name [Operator](SELECT column_name(s) FROM table_name WHERE condition);
+```
+#### Inline View SubQuery
+``` SQL
+SELECT column_name(s)
+FROM (SELECT column_name(s) FROM table_name) AS alias_name
+WHERE condition;
+```
 ####  WITH
 ``` SQL
 WITH alias_name1 AS (
@@ -27,6 +39,13 @@ WITH alias_name1 AS (
 ), alias_nameN AS (
 ...
 )
-
 SELECT * FROM alias_nameN;
 ```
+#### Scala SubQuery
+``` SQL
+SELECT column_name(s)
+       (SELECT column_names(s) FROM table_name WHERE condition)
+FROM table_name
+WHERE condition;
+```
+####
