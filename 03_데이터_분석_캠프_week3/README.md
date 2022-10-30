@@ -1,17 +1,17 @@
 ####
 ## 03. 데이터 분석 캠프 week3
 #### ► [01_funnel_analysis_01_221030]
-- 퍼널 분석(Funnel Analysis) 세션(Session) 관련 이론 학습
+- 퍼널 분석(Funnel Analysis) ・ 세션(Session) 관련 이론 학습
 - SQL을 활용한 세션별 퍼널 전환율(Conversion rate) 계산 실습
 ##
-#### 1. 퍼널 분석(Funnel Analysis)
+#### 퍼널 분석(Funnel Analysis)
 - 사용자가 설계된 사용자 경험 루트에 유입된 후, 최종 목적지까지 잘 도착했는지 주요 단계별로 나누어 살펴보는 사용자 분석 방법
 - 각 단계별로 사용자 수가 줄어드는 깔때기(Funnel) 모양을 본떠 퍼널 분석이라 지칭
 - 사용자가 각 단계를 넘어가는 것을 전환(Conversion), 그 비율을 전환율(Conversion Rate)이라 지칭
-#### 2. UTM(Urchin Tracking Module) 
+#### UTM(Urchin Tracking Module) 
 - 온라인 마케팅 캠페인을 효과적으로 추적하기 위해 사용하는 유입 경로를 표시해주는 5가지의 URL 매개 변수
 - utm_source / utm_medium / utm_campaign / utm_term / utm_content 구성
-#### 3. 세션(Session)
+#### 세션(Session)
 - 사용자가 지정된 기간 내에 사이트에서 취한 페이지 조회 / 이벤트 / 전자상거래 등의 행동 집합
 - 사용자의 행동이 어떠한 사유로 진행된 것인지 특정하기 위해 연속된 활동을 세션 단위로 묶어 분석 진행
 <img src="https://user-images.githubusercontent.com/109773795/198859313-4ce1f4da-fce8-455c-9bc7-11baec7a812a.png" width="750" height="230"/>
