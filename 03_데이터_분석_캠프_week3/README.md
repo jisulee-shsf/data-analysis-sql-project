@@ -20,3 +20,18 @@
 - [datarian 데이터 분석 블로그](https://www.datarian.io/blog)
 - [Google Analytics - 맞춤 URL을 사용해 캠페인 데이터 수집하기](https://support.google.com/analytics/answer/1033863?hl=ko#zippy=%2C%EC%9D%B4-%EB%8F%84%EC%9B%80%EB%A7%90%EC%97%90-%EB%82%98%EC%99%80-%EC%9E%88%EB%8A%94-%EB%82%B4%EC%9A%A9%EC%9D%80-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4)
 - [Google Analytics - 유니버설 애널리틱스에서 웹 세션을 정의하는 방법](https://support.google.com/analytics/answer/2731565?hl=ko#zippy=%2C%EC%9D%B4-%EB%8F%84%EC%9B%80%EB%A7%90%EC%97%90-%EB%82%98%EC%99%80-%EC%9E%88%EB%8A%94-%EB%82%B4%EC%9A%A9%EC%9D%80-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4)
+##
+#### Funnel Analysis
+``` SQL
+SELECT COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_session_cnt
+     , COUNT(DISTINCT page_scroll.user_id, page_scroll.session_id) AS scroll_session_cnt
+     , COUNT(DISTINCT page_scroll.user_id, page_scroll.session_id) 
+     / COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_scroll_rate
+FROM page_view
+LEFT JOIN page_scroll ON page_view.user_id = page_scroll.user_id
+                     AND page_view.session_id = page_scroll.session_id
+                     AND page_view.event_timestamp <= page_scroll.event_timestamp;          
+```
+|view_session_cnt|scroll_session_cnt|view_scroll_rate|
+|:---:|:---:|:---:|
+|1135|309|0.2722|
