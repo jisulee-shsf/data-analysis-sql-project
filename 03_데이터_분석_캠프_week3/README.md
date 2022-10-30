@@ -15,6 +15,7 @@
 - 사용자가 지정된 기간 내에 사이트에서 취한 페이지 조회 / 이벤트 / 전자상거래 등의 행동 집합
 - 사용자의 행동이 어떠한 사유로 진행된 것인지 특정하기 위해 연속된 활동을 세션 단위로 묶어 분석 진행
 <img src="https://user-images.githubusercontent.com/109773795/198859313-4ce1f4da-fce8-455c-9bc7-11baec7a812a.png" width="750" height="230"/>
+<img src="https://user-images.githubusercontent.com/109773795/198901487-8f8fae97-57a2-4b67-942a-09764900777a.png" width="750" height="360"/>
 
 #### Reference 
 - [datarian 데이터 분석 블로그](https://www.datarian.io/blog)
