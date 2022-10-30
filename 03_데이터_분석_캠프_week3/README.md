@@ -1,63 +1,22 @@
 ####
-## 02. 데이터 분석 캠프 week2
-#### ► [01_classic_retention_221014 / 02_rolling_retention_221014]
-- 그로스 해킹(Growth Hacking) ・ AARRR 해적 지표(Pirate Metrics) ・ 코호트 분석(Cohort Analysis) 등 리텐션 관련 이론 학습
-- SQL을 활용한 클래식 리텐션(Classic Retention) ・ 롤링 리텐션(Rolling Retention) 구현 실습
+## 03. 데이터 분석 캠프 week3
+#### ► [01_funnel_analysis_01_221030]
+- 퍼널 분석(Funnel Analysis) 세션(Session) 관련 이론 학습
+- SQL을 활용한 세션별 퍼널 전환율(Conversion rate) 계산 실습
 ##
-#### 1. 그로스 해킹(Growth Hacking)
-- Cross-functional한 조직에서 데이터를 기반으로 정의한 핵심 지표를 중심으로 실험의 반복을 통해 제품 및 서비스를 성장시키는 것
-- 제품 및 서비스를 성장시키기 위해 데이터 정의부터 환경 구축, 수집, 집계, 분석, 실험 등을 진행하는 전반적인 과정을 포괄하는 용어
-#### 2. AARRR 해적 지표(Pirate Metrics)
-- 사용자의 lifecycle을 기반으로 stage를 구분해 핵심 지표를 효율적으로 분석하고 관리하는 그로스 해킹(Growth Hacking)의 대표 프레임워크 
-- A(Acquisition) - 사용자 획득 → 사용자를 서비스로 데려오는 것
-- A(Activation) - 사용자 활성화 → Acquisition으로 데려온 사용자가 서비스의 핵심 가치를 경험했는가? 
-- R(Retention) - 사용자 유지 → Activation 과정으로 경험한 서비스의 핵심 가치를 꾸준히 경험하도록 하는 것
-- R(Revenue) - 매출 → 서비스가 매출로 돌아오는가?
-- R(Referral) - 전파 / 추천 → 기존 사용자의 추천 및 입소문을 통해 사용자가 확대되었는가?
-#### 3-1. 클래식 리텐션(Classic Retention) / 롤링 리텐션(Rolling Retention) / 범위 리텐션(Range Retention)
-- 제품 서비스의 성공을 예측할 수 있는 가장 중요한 지표 중 하나인 리텐션을 분석하는 대표적인 방법 
-- 클래식 리텐션(Classic / N-Day Retention) - 최초 사용일로부터 n일 후에 서비스로 재방문한 사용자 비율 계산
-- 롤링 리텐션(Rolling / Unbounded Retention) - 특정 일자를 포함해 그 이후 한 번이라도 서비스에 재방문한 사용자 비율 계산
-- 범위 리텐션(Range / Bracket Retention) - 설정한 범위 기간 내에 서비스에 재방문한 사용자 비율 계산
-#### 3-2. 코호트 분석(Cohort Analysis) / 리텐션 차트(Retention Chart)
-- 코호트 분석(Cohort Analysis) - 가입 시기별 등, 특정 기간에 공통된 특성이나 경험을 갖는 동질 사용자를 그룹으로 나누어 분석하는 것
-- 리텐션 차트(Retention Chart) - 코호트 분석(Cohort Analysis)을 리텐션 분석에 응용해 사용자의 리텐션 변화를 측정하는 것
-#### 3-3. DAU / WAU / MAU / Stickiness
-- DAU(Daily Active User) - 일별 활성 사용자 수
-- WAU(Weekly Active User) - 주별 활성 사용자 수
-- MAU(Monthly Active User) - 월별 활성 사용자 수
-- Stickiness - 사용자 고착도
-#### Reference
-- [그로스해킹 - 데이터와 실험을 통해 성장하는 서비스를 만드는 방법](https://www.inflearn.com/course/%EA%B7%B8%EB%A1%9C%EC%8A%A4%ED%95%B4%ED%82%B9-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8B%A4%ED%97%98-%EC%84%B1%EC%9E%A5-%EC%84%9C%EB%B9%84%EC%8A%A4/)  
+#### 1. 퍼널 분석(Funnel Analysis)
+- 사용자가 설계된 사용자 경험 루트에 유입된 후, 최종 목적지까지 잘 도착했는지 주요 단계별로 나누어 살펴보는 사용자 분석 방법
+- 각 단계별로 사용자 수가 줄어드는 깔때기(Funnel) 모양을 본떠 퍼널 분석이라 지칭
+- 사용자가 각 단계를 넘어가는 것을 전환(Conversion), 그 비율을 전환율(Conversion Rate)이라 지칭
+#### 2. UTM(Urchin Tracking Module) 
+- 온라인 마케팅 캠페인을 효과적으로 추적하기 위해 사용하는 유입 경로를 표시해주는 5가지의 URL 매개 변수
+- utm_source / utm_medium / utm_campaign / utm_term / utm_content 구성
+#### 3. 세션(Session)
+- 사용자가 지정된 기간 내에 사이트에서 취한 페이지 조회 / 이벤트 / 전자상거래 등의 행동 집합
+- 사용자의 행동이 어떠한 사유로 진행된 것인지 특정하기 위해 연속된 활동을 세션 단위로 묶어 분석 진행
+<img src="https://user-images.githubusercontent.com/109773795/198859313-4ce1f4da-fce8-455c-9bc7-11baec7a812a.png" width="750" height="230"/>
+
+#### Reference 
 - [datarian 데이터 분석 블로그](https://www.datarian.io/blog)
-- [리텐션을 측정하는 세 가지 방법](https://blog.ab180.co/posts/retention-series-3-1)
-- [Cross-functional이란?](https://brunch.co.kr/@youngstone89/6)
-##
-#### Classic Retention
-``` SQL
-SELECT first_order_month
-     , COUNT(DISTINCT customer_id) AS month0
-     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
-FROM records_preprocessed
-GROUP BY 1;
-```
-|first_order_month|month0|month1|
-|:---:|:---:|:---:|
-|2020-01-01|67|3|
-|2020-02-01|50|6|
-|2020-03-01|101|13|
-####
-#### Rolling Retention
-``` SQL
-SELECT first_order_month
-    , COUNT(DISTINCT customer_id) AS month0
-    , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) <= last_order_month THEN customer_id END) AS month1
-FROM records_preprocessed
-GROUP BY 1;
-```
-|first_order_month|month0|month1|
-|:---:|:---:|:---:|
-|2020-01-01|67|54|
-|2020-02-01|50|47|
-|2020-03-01|101|83|
-####
+- [Google Analytics - 맞춤 URL을 사용해 캠페인 데이터 수집하기](https://support.google.com/analytics/answer/1033863?hl=ko#zippy=%2C%EC%9D%B4-%EB%8F%84%EC%9B%80%EB%A7%90%EC%97%90-%EB%82%98%EC%99%80-%EC%9E%88%EB%8A%94-%EB%82%B4%EC%9A%A9%EC%9D%80-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4)
+- [Google Analytics - 유니버설 애널리틱스에서 웹 세션을 정의하는 방법](https://support.google.com/analytics/answer/2731565?hl=ko#zippy=%2C%EC%9D%B4-%EB%8F%84%EC%9B%80%EB%A7%90%EC%97%90-%EB%82%98%EC%99%80-%EC%9E%88%EB%8A%94-%EB%82%B4%EC%9A%A9%EC%9D%80-%EB%8B%A4%EC%9D%8C%EA%B3%BC-%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4)
