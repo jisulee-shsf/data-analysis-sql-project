@@ -52,8 +52,8 @@ LEFT JOIN page_scroll ON page_view.user_id = page_scroll.user_id
                      AND page_view.session_id = page_scroll.session_id
                      AND page_view.event_timestamp <= page_scroll.event_timestamp
 LEFT JOIN page_click ON page_scroll.user_pseudo_id = page_click.user_pseudo_id
-		          AND page_scroll.session_id = page_click.session_id
-		          AND page_scroll.event_timestamp <= page_click.event_timestamp;
+		    AND page_scroll.session_id = page_click.session_id
+		    AND page_scroll.event_timestamp <= page_click.event_timestamp;
 ```
 |view_session_cnt|scroll_session_cnt|click_session_cnt|view_scroll_rate|scroll_click_rate|view_click_rate|
 |:---:|:---:|:---:|:---:|:---:|:---:|
