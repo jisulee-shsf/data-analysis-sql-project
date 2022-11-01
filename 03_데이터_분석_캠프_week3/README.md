@@ -27,7 +27,7 @@
 SELECT COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_session_cnt
      , COUNT(DISTINCT page_scroll.user_id, page_scroll.session_id) AS scroll_session_cnt
      , COUNT(DISTINCT page_scroll.user_id, page_scroll.session_id) 
-       / COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_scroll_rate
+     / COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_scroll_rate
 FROM page_view
 LEFT JOIN page_scroll ON page_view.user_id = page_scroll.user_id
                      AND page_view.session_id = page_scroll.session_id
