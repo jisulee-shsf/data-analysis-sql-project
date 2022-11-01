@@ -1,5 +1,5 @@
 -- 전체 매출에 가장 큰 영향을 미치는 서브 카테고리 출력하기
-# WITH절 사용
+# WITH 사용
 WITH records AS (
 SELECT category
      , sub_category
