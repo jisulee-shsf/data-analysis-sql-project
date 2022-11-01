@@ -23,7 +23,7 @@ ORDER BY D.name, DENSE_RANK() OVER (ORDER BY E.Salary DESC)
 */
 
 # 수정 코드1
-WITH rank_tbl AS (
+WITH records AS (
 SELECT D.name AS Department 
      , E.name AS Employee
      , E.salary AS Salary
@@ -35,7 +35,7 @@ INNER JOIN Employee E ON D.id = E.departmentId
 SELECT Department
 , Employee
 , Salary
-FROM rank_tbl
+FROM records
 WHERE Salary_rank <= 3
 
 # 수정 코드2
@@ -47,7 +47,7 @@ FROM (SELECT D.name AS Department
            , E.salary AS Salary
            , DENSE_RANK() OVER (PARTITION BY D.name ORDER BY E.salary DESC) AS Salary_rank
       FROM Department D
-      INNER JOIN Employee E ON D.id = E.departmentId) inline_view_subquery
+      INNER JOIN Employee E ON D.id = E.departmentId) records
 WHERE Salary_rank <= 3
 
 /*
