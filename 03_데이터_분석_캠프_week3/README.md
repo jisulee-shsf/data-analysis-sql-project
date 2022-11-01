@@ -36,6 +36,8 @@ LEFT JOIN page_scroll ON page_view.user_id = page_scroll.user_id
 |view_session_cnt|scroll_session_cnt|view_scroll_rate|
 |:---:|:---:|:---:|
 |1135|309|0.2722|
+- 사이트 페이지를 본 세션 수는 1135이며, 페이지를 본 뒤 스크롤을 한 세션 수는 309입니다.
+- 페이지를 본 뒤 스크롤한 전환율은 약 27%입니다.
 #### Funnel Analysis - view → scroll → click
 ``` SQL
 SELECT COUNT(DISTINCT page_view.user_id, page_view.session_id) AS view_session_cnt
@@ -58,4 +60,6 @@ LEFT JOIN page_click ON page_scroll.user_pseudo_id = page_click.user_pseudo_id
 |view_session_cnt|scroll_session_cnt|click_session_cnt|view_scroll_rate|scroll_click_rate|view_click_rate|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |1135|309|38|0.2722|0.123|0.0335|
+- 사이트 페이지를 본 세션 수는 1135, 페이지를 본 뒤 스크롤을 한 세션 수는 309, 스크롤한 뒤 기초반 신청하기 버튼을 클릭한 세션 수는 38입니다.
+- 페이지를 본 뒤 스크롤한 전환율은 약 27%, 스크롤한 뒤 클릭한 전환율은 약 12%, 페이지를 본 뒤 클릭까지 도달한 최종 전환율은 약 3%입니다.
 ####
