@@ -14,8 +14,8 @@
 - 02_rolling_retention_221014
 ####
 #### ► [03_데이터_분석_캠프_week3]
-- 01_funnel_analysis_01_221021.sql
-- 02_funnel_analysis_02_221021.sql
+- 01_funnel_analysis_01_221021
+- 02_funnel_analysis_02_221021
 ####
 #### ► [04_데이터_분석_캠프_week4]
 -
