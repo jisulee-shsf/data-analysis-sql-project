@@ -22,7 +22,7 @@ ORDER BY D.name, DENSE_RANK() OVER (ORDER BY E.Salary DESC);
 ["Sales", "Sam", 60000]
 */
 
-# 수정 코드1
+# 수정 코드1 - WITH 사용
 WITH records AS (
 SELECT D.name AS Department 
      , E.name AS Employee
@@ -38,7 +38,7 @@ SELECT Department
 FROM records
 WHERE Salary_rank <= 3;
 
-# 수정 코드2
+# 수정 코드2 - Inline View SubQuery 사용
 SELECT Department
      , Employee
      , Salary
