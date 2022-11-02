@@ -42,12 +42,13 @@ WHERE Salary_rank <= 3;
 SELECT Department
      , Employee
      , Salary
-FROM (SELECT D.name AS Department 
-           , E.name AS Employee
-           , E.salary AS Salary
-           , DENSE_RANK() OVER (PARTITION BY D.name ORDER BY E.salary DESC) AS Salary_rank
-      FROM Department D
-      INNER JOIN Employee E ON D.id = E.departmentId) records
+FROM (
+     SELECT D.name AS Department 
+          , E.name AS Employee
+          , E.salary AS Salary
+          , DENSE_RANK() OVER (PARTITION BY D.name ORDER BY E.salary DESC) AS Salary_rank
+     FROM Department D
+     INNER JOIN Employee E ON D.id = E.departmentId) records
 WHERE Salary_rank <= 3;
 
 /*
