@@ -5,7 +5,8 @@ SELECT category
      , sub_category
      , ROUND(SUM(sales), 2) AS sales_sub_category
 FROM records
-GROUP BY 1, 2)
+GROUP BY 1, 2
+)
 
 SELECT category
      , sub_category
