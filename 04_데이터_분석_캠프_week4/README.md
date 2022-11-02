@@ -10,7 +10,8 @@ SELECT category
      , sub_category
      , ROUND(SUM(sales), 2) AS sales_sub_category
 FROM records
-GROUP BY 1, 2)
+GROUP BY 1, 2
+)
 
 SELECT category
      , sub_category
@@ -41,18 +42,19 @@ INNER JOIN Employee E ON D.id = E.departmentId
 )
 
 SELECT Department
-, Employee
-, Salary
+     , Employee
+     , Salary
+     , Salary_rank
 FROM records
 WHERE Salary_rank <= 3;
 ```
-|Department|Employee|Salary|
-|:---:|:---:|:---:|
-|IT|Max|90000|
-|IT|Joe|85000|
-|IT|Randy|85000|
-|IT|Will|70000|
-|Sales|Henry|80000|
-|Sales|Sam|60000|
+|Department|Employee|Salary|Salary_rank|
+|:---:|:---:|:---:|:---:|
+|IT|Max|90000|1|
+|IT|Joe|85000|2|
+|IT|Randy|85000|2|
+|IT|Will|70000|3|
+|Sales|Henry|80000|1|
+|Sales|Sam|60000|2|
 - Salary_rank - Department 파티션 내에서 salary가 높은 순으로 공동 순위를 건너뛰지 않고 3순위까지 출력한 결과
 ##
