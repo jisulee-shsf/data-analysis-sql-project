@@ -33,8 +33,8 @@ INNER JOIN Employee E ON D.id = E.departmentId
 )
 
 SELECT Department
-, Employee
-, Salary
+     , Employee
+     , Salary
 FROM records
 WHERE Salary_rank <= 3;
 
