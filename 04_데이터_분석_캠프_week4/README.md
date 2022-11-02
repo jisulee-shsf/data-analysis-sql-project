@@ -28,4 +28,29 @@ ORDER BY pct_in_total DESC;
 |Technology|Phones|105340.52|271730.82|733215.26|38.77|14.37|
 - Technology 카테고리의 서브 카테고리인 Phones는 105340.52원의 매출로 카테고리 전체 매출인 271730.82원의 약 38%를 차지합니다.
 - 또한, Phones는 전체 매출인 733215.26원의 약 14%를 차지해 전체 매출에 가장 큰 영향을 미치는 서브 카테고리 제품임을 확인할 수 있었습니다.
-####
+##
+#### Window Function - Rank Function
+``` SQL
+WITH records AS (
+SELECT D.name AS Department 
+     , E.name AS Employee
+     , E.salary AS Salary
+     , DENSE_RANK() OVER (PARTITION BY D.name ORDER BY E.salary DESC) AS Salary_rank
+FROM Department D
+INNER JOIN Employee E ON D.id = E.departmentId
+)
+
+SELECT Department
+, Employee
+, Salary
+FROM records
+WHERE Salary_rank <= 3;
+```
+|Department|Employee|Salary|
+|:---:|:---:|:---:|
+|IT|Max|90000|
+|IT|Joe|85000|
+|IT|Randy|85000|
+|IT|Will|70000|
+|Sales|Henry|80000|
+|Sales|Sam|60000|
