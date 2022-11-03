@@ -18,11 +18,12 @@
 - 02_funnel_analysis_02_221021
 ####
 #### ► [04_데이터_분석_캠프_week4]
--
+- 01_window_function_sum_221028
+- 02_window_function_dense_rank_221028
+- 03_window_function_session_lag_n_lead_221028
 ####
 ## Reference
-- [datarian] datarian SQL 데이터 분석 캠프 실전반 10기 학습 내용
+- datarian SQL 데이터 분석 캠프 실전반 10기 학습 내용
 - https://www.w3schools.com/
-- https://www.hackerrank.com/
 - https://leetcode.com/
 ####
