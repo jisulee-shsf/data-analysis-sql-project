@@ -28,7 +28,7 @@ ORDER BY pct_in_total DESC;
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Technology|Phones|105340.52|271730.82|733215.26|38.77|14.37|
 ##
-#### ► [01_window_function_dense_rank_221028]
+#### ► [02_window_function_dense_rank_221028]
 - 윈도우 함수 DENSE_RANK를 통해, 부서별 급여 순위가 높은 직원을 확인하는 쿼리 작성 실습
 - Salary_rank - Department 파티션 내에서 salary가 높은 순으로 공동 순위를 건너뛰지 않고 3순위까지 출력한 결과
 ``` SQL
@@ -57,7 +57,7 @@ WHERE Salary_rank <= 3;
 |Sales|Henry|80000|1|
 |Sales|Sam|60000|2|
 ##
-#### ► [01_window_function_lag_n_lead_221028]
+#### ► [03_window_function_lag_n_lead_221028]
 - 윈도우 함수 LAG() & LEAD()를 통해, 데이터 위치를 변경하는 쿼리 작성 실습
 - late_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
 - next_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과 
