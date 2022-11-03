@@ -59,7 +59,7 @@ WHERE Salary_rank <= 3;
 |Sales|Sam|60000|2|
 ##
 #### ► [03_window_function_session_lag_n_lead_221028]
-- 윈도우 함수 LAG() & LEAD()를 통해, 세션을 정의하는 쿼리 작성 실습
+- 윈도우 함수 LAG() & LEAD()를 통해, 세션을 정의하는 쿼리 작성 실습(PostgreSQL)
 - https://mode.com/sql-tutorial/understanding-search-functionality/
 - late_event - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
 - next_event - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과
