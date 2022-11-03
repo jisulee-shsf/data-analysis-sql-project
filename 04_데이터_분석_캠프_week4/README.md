@@ -18,7 +18,7 @@ SELECT category
      , sales_sub_category 
      , ROUND(SUM(sales_sub_category) OVER (PARTITION BY category), 2) AS sales_category
      , ROUND(SUM(sales_sub_category) OVER (), 2) AS sales_total
-     , ROUND(sales_sub_category / SUM(sales_sub_category) OVER (PARTITION BY category) * 100, 2) AS pct_in_category 
+     , ROUND(sales_sub_category / SUM(sales_sub_category) OVER (PARTITION BY category) * 100, 2) AS pct_in_category
      , ROUND(sales_sub_category / SUM(sales_sub_category) OVER () * 100, 2) AS pct_in_total
 FROM records
 GROUP BY 1, 2
@@ -31,6 +31,7 @@ ORDER BY pct_in_total DESC;
 #### ► [02_window_function_dense_rank_221028]
 - 윈도우 함수 DENSE_RANK를 통해, 부서별 급여 순위가 높은 직원을 확인하는 쿼리 작성 실습
 - Salary_rank - Department 파티션 내에서 salary가 높은 순으로 공동 순위를 건너뛰지 않고 3순위까지 출력한 결과
+- https://leetcode.com/problems/department-highest-salary/
 ``` SQL
 WITH records AS (
 SELECT D.name AS Department 
@@ -60,14 +61,15 @@ WHERE Salary_rank <= 3;
 #### ► [03_window_function_lag_n_lead_221028]
 - 윈도우 함수 LAG() & LEAD()를 통해, 데이터 위치를 변경하는 쿼리 작성 실습
 - late_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
-- next_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과 
+- next_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과
+- https://leetcode.com/problems/rising-temperature/
 ``` SQL
 SELECT id
      , temperature
      , recordDate
      , LAG(recordDate, 1, 0) OVER (ORDER BY recordDate) AS late_time
      , LEAD(recordDate, 1, 0) OVER (ORDER BY recordDate) AS next_time
-FROM Weather
+FROM Weather;
 ```
 |id|temperature|recordDate|late_time|next_time|
 |:---:|:---:|:---:|:---:|:---:|
