@@ -58,17 +58,18 @@ WHERE Salary_rank <= 3;
 |Sales|Henry|80000|1|
 |Sales|Sam|60000|2|
 ##
-#### ► [03_window_function_lag_n_lead_221028]
-- 윈도우 함수 LAG() & LEAD()를 통해, 데이터 위치를 변경하는 쿼리 작성 실습
-- late_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
-- next_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과
+#### ► [03_window_function_session_lag_n_lead_221028]
+- 윈도우 함수 LAG() & LEAD()를 통해, 세션을 정의하는 쿼리 작성 실습
+- https://mode.com/sql-tutorial/understanding-search-functionality/
+- late_event - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
+- next_event - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과
 - https://leetcode.com/problems/rising-temperature/
 ``` SQL
 SELECT id
      , temperature
      , recordDate
-     , LAG(recordDate, 1, 0) OVER (ORDER BY recordDate) AS late_time
-     , LEAD(recordDate, 1, 0) OVER (ORDER BY recordDate) AS next_time
+     , LAG(recordDate, 1, 0) OVER (ORDER BY recordDate) AS late_event
+     , LEAD(recordDate, 1, 0) OVER (ORDER BY recordDate) AS next_event
 FROM Weather;
 ```
 |id|temperature|recordDate|late_time|next_time|
