@@ -3,7 +3,7 @@
 #### ► [01_window_function_01_221028 / 02_window_function_02_221028]
 - 다양한 비즈니스 사례에 적용되는 윈도우 함수 이론 학습 및 실습
 ##
-#### Window Function - Aggregate Function
+#### Window Function - SUM()
 ``` SQL
 WITH records AS (
 SELECT category
@@ -30,7 +30,7 @@ ORDER BY pct_in_total DESC;
 - sales_category - category 파티션 내에서 sales_sub_category의 합계를 출력한 결과 
 - sales_total - 별도의 파티션 없이, 전체 sales_sub_category의 합계를 출력한 결과 
 ##
-#### Window Function - Rank Function
+#### Window Function - DENSE_RANK()
 ``` SQL
 WITH records AS (
 SELECT D.name AS Department 
@@ -58,3 +58,20 @@ WHERE Salary_rank <= 3;
 |Sales|Sam|60000|2|
 - Salary_rank - Department 파티션 내에서 salary가 높은 순으로 공동 순위를 건너뛰지 않고 3순위까지 출력한 결과
 ##
+#### Window Function - LAG() / LEAD()
+``` SQL
+SELECT id
+     , temperature
+     , recordDate
+     , LAG(recordDate, 1, 0) OVER (ORDER BY recordDate) AS late_time
+     , LEAD(recordDate, 1, 0) OVER (ORDER BY recordDate) AS next_time
+FROM Weather
+```
+|id|temperature|recordDate|late_time|next_time|
+|:---:|:---:|:---:|:---:|:---:|
+|1|10|2015-01-01|0|2015-01-02|
+|2|25|2015-01-02|2015-01-01|2015-01-03|
+|3|20|2015-01-03|2015-01-02|2015-01-04|
+|4|30|2015-01-04|2015-01-03|0|
+- late_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 밀어 NULL 공란을 0으로 출력한 결과
+- next_time - recordDate 데이터를 recordDate 순서에 맞춰 1칸씩 당겨 NULL 공란을 0으로 출력한 결과 
