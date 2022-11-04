@@ -17,7 +17,7 @@ INNER JOIN products table2 ON table1.category_id = table2.category_id
 ORDER BY 4 DESC
 LIMIT 30;
 
--- 1-2. FROM절 서브쿼리 - WITH 구문 사용
+-- 1-2. FROM절 서브쿼리 - WITH절 사용
 WITH table1 AS (
 SELECT category_id
      , SUM(price) AS oct_sales
