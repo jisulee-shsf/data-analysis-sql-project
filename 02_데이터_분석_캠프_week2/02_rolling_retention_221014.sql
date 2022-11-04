@@ -1,4 +1,4 @@
--- 1-1. 주문 요약 테이블 추출하기 - 단일 WITH
+-- 1-1. 주문 요약 테이블 추출하기 - 단일 WITH절 사용
 WITH order_stats AS (
 SELECT customer_id
      , MIN(order_date) AS first_order_date
@@ -11,7 +11,7 @@ GROUP BY 1
 
 SELECT * FROM order_stats;
 
--- 1-2. 전처리 완료 테이블 추출하기 - 다중 WITH
+-- 1-2. 전처리 완료 테이블 추출하기 - 다중 WITH절 사용
 WITH order_stats AS (
 SELECT customer_id
      , MIN(order_date) AS first_order_date
@@ -39,7 +39,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 2-2. 첫 구매한 달 이후 다음달에 이탈하지 않은 고객 수 출력하기 - 단일 IF / 단일 CASE WHEN
+-- 2-2. 첫 구매한 달 이후 다음달에 이탈하지 않은 고객 수 출력하기 - 단일 IF / 단일 CASE WHEN 
 SELECT first_order_month
     , COUNT(DISTINCT customer_id) AS month0
     , COUNT(DISTINCT IF(DATE_ADD(first_order_month, INTERVAL 1 month) <= last_order_month, customer_id, NULL)) AS month1
@@ -52,7 +52,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 3-1. 첫 구매한 달 이후 이탈하지 않은 고객 수 출력하기 - 다중 CASE WHEN
+-- 3-1. 첫 구매한 달 이후 이탈하지 않은 고객 수 출력하기 - 다중 CASE WHEN 구문 사용
 SELECT first_order_month
     , COUNT(DISTINCT customer_id) AS month0
     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) <= last_order_month THEN customer_id END) AS month1
