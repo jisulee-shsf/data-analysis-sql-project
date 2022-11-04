@@ -38,7 +38,7 @@
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
      , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) 
-       = order_month THEN customer_id END) AS month1
+      = order_month THEN customer_id END) AS month1
 FROM records_preprocessed
 GROUP BY 1;
 ```
@@ -51,8 +51,8 @@ GROUP BY 1;
 #### Rolling Retention
 ``` SQL
 SELECT first_order_month
-    , COUNT(DISTINCT customer_id) AS month0
-    , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) 
+     , COUNT(DISTINCT customer_id) AS month0
+     , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) 
       <= last_order_month THEN customer_id END) AS month1
 FROM records_preprocessed
 GROUP BY 1;
