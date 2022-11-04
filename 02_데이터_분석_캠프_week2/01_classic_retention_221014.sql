@@ -39,7 +39,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 2-2. 첫 구매한 달 이후 다음달에 재주문한 고객 수 출력하기 - 단일 IF / 단일 CASE WHEN 사용
+-- 2-2. 첫 구매한 달 이후 다음달에 재주문한 고객 수 출력하기 - 단일 IF / 단일 CASE WHEN 구문 사용
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
      , COUNT(DISTINCT IF(DATE_ADD(first_order_month, INTERVAL 1 month) = order_month, customer_id, NULL)) AS month1
@@ -52,7 +52,7 @@ SELECT first_order_month
 FROM records_preprocessed
 GROUP BY 1;
 
--- 3-1. 첫 구매한 달 이후 재주문 고객 수 출력하기 - 다중 CASE WHEN 사용
+-- 3-1. 첫 구매한 달 이후 재주문 고객 수 출력하기 - 다중 CASE WHEN 구문 사용
 SELECT first_order_month
      , COUNT(DISTINCT customer_id) AS month0
      , COUNT(DISTINCT CASE WHEN DATE_ADD(first_order_month, INTERVAL 1 month) = order_month THEN customer_id END) AS month1
