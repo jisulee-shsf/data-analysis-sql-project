@@ -22,7 +22,7 @@ ORDER BY D.name, DENSE_RANK() OVER (ORDER BY E.Salary DESC);
 ["Sales", "Sam", 60000]
 */
 
-# 수정 코드1 - WITH 사용
+# 수정 코드1 - WITH절 사용
 WITH records AS (
 SELECT D.name AS Department 
      , E.name AS Employee
