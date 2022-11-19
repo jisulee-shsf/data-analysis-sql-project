@@ -16,16 +16,12 @@
 ``` SQL
 SELECT column_name
 FROM table_name
-WHERE column_name [Operator] (SELECT column_name
-                              FROM table_name 
-                              WHERE condition);
+WHERE column_name [Operator] (SELECT column_name FROM table_name WHERE condition);
 ```
 #### Inline View SubQuery
 ``` SQL
 SELECT column_name
-FROM (SELECT column_name
-      FROM table_name
-      WHERE condition) AS alias_name
+FROM (SELECT column_name FROM table_name WHERE condition) AS alias_name
 WHERE condition;
 ```
 ####  WITH
@@ -39,9 +35,7 @@ WITH alias_name1 AS (
 #### Scala SubQuery
 ``` SQL
 SELECT column_name
-    , (SELECT column_names 
-       FROM table_name 
-       WHERE condition)
+    , (SELECT column_names FROM table_name WHERE condition)
 FROM table_name
 WHERE condition;
 ```
