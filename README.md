@@ -22,8 +22,13 @@
 - 02_window_function_dense_rank_221028
 - 03_window_function_session_lag_n_lead_221028
 ####
+## Projects
+#### ► [e-commerce_annual_report] 🔗 [E-Commerce Annual Report](https://drive.google.com/file/d/1z43GXRQuZWDrVYGsZIYWUYBevB-XLG-B/view?usp=share_link)
+- 2022.11.07 ~ 2022.11.20 프로젝트 진행
+- SQL ・ Python을 활용한 annual report 형식의 개인 프로젝트
+- 매출 현황 파악 및 cohort별 classic ・ rolling retention 분석 진행
+####
 ## Reference
-- [datarian] SQL 데이터 분석 캠프 실전반 10기 학습 내용
+- [datarian] SQL 데이터 분석 캠프 실전
 - https://www.w3schools.com/
-- https://leetcode.com/
 ####
