@@ -1,5 +1,5 @@
 ####
-# MySQL | E-commerce Annual Report
+# E-commerce Annual Report
 ### Description
 - 2022.11.07 ~ 2022.11.20 프로젝트 진행
 - SQL ・ Python을 활용한 annual report 형식의 개인 프로젝트
