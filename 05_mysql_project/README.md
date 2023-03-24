@@ -4,7 +4,7 @@
 - 2022.11.07 ~ 2022.11.20 프로젝트 진행
 - SQL ・ Python을 활용한 annual report 형식의 개인 프로젝트
 - 매출 현황 파악 및 cohort별 classic ・ rolling retention 분석 진행
-🔗 [E-Commerce Annual Report](https://drive.google.com/file/d/1z43GXRQuZWDrVYGsZIYWUYBevB-XLG-B/view?usp=share_link)
+🔗 [E-commerce Annual Report](https://drive.google.com/file/d/1z43GXRQuZWDrVYGsZIYWUYBevB-XLG-B/view?usp=share_link)
 ####
 ### Objectives
 - MySQL을 통한 데이터 추출 / 데이터 분석 방법에 기반한 논지 전개 및 Action Item 도출
@@ -35,5 +35,5 @@
 - Python 라이브러리를 활용한 data visualization 외 Tableau를 활용한 대시보드 설계 방법을 추가 학습할 예정입니다.
 ####
 ### Reference
-- [[Kaggle] United States E-Commerce records 2020](https://www.kaggle.com/datasets/ammaraahmad/us-ecommerce-record-2020)
+- [[Kaggle] United States E-commerce records 2020](https://www.kaggle.com/datasets/ammaraahmad/us-ecommerce-record-2020)
 ####
