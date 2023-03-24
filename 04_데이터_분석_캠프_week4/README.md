@@ -1,5 +1,5 @@
 ####
-## 04. 데이터 분석 캠프 week4
+## 데이터 분석 캠프 week4
 #### ► [01_window_function_sum_221028]
 - 윈도우 함수 SUM을 통해, 전체 매출에 가장 큰 영향을 미치는 서브 카테고리를 확인하는 쿼리 작성 실습
 - sales_category - category 파티션 내에서 sales_sub_category의 합계를 출력한 결과 
