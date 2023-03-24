@@ -23,8 +23,9 @@
 - financial review - 2020년도 한 해의 월별 ・ 분기별 / 요일별 / 카테고리별 / 서브 카테고리별 매출 현황 파악
 - retention review - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
 - action item - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
-<div align="left"><img src="https://user-images.githubusercontent.com/109773795/227499159-e6d57146-f709-4c0b-a22d-b61690ca114f.png" width="425" height="430"/><img src="https://user-images.githubusercontent.com/109773795/227499316-cb13ab42-35bd-4c25-8519-3805c5db9ce2.png" width="425" height="430"/><br>
-<img src="https://user-images.githubusercontent.com/109773795/227498356-e3929c40-f4a7-4fc0-bec2-f59dd01a0a3a.png" width="850" height="300"/>
+<div align="left"><img src="https://user-images.githubusercontent.com/109773795/227499159-e6d57146-f709-4c0b-a22d-b61690ca114f.png" width="455" height="450"/><img src="https://user-images.githubusercontent.com/109773795/227499316-cb13ab42-35bd-4c25-8519-3805c5db9ce2.png" width="455" height="450"/><br>
+
+<div align="left"><img src="https://user-images.githubusercontent.com/109773795/227498356-e3929c40-f4a7-4fc0-bec2-f59dd01a0a3a.png" width="900" height="300"/>
 
 ####
 ### Afterthoughts
