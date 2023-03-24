@@ -10,11 +10,6 @@
 - MySQL을 통한 데이터 추출 / 데이터 분석 방법에 기반한 논지 전개 및 Action Item 도출
 - Python 라이브러리를 활용한 다양한 data visualization 진행
 ####
-### Contents
-- financial review - 2020년도 한 해의 월별 ・ 분기별 / 요일별 / 카테고리별 / 서브 카테고리별 매출 현황 파악
-- retention review - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
-- action item - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
-####
 ### Skills
 -
     <div align="left"><img src="https://img.shields.io/badge/[MySQL]-JOIN / GROUP BY / Pivot Table / SubQuery / Window Functions 외 다수-4479A1"/>
@@ -22,6 +17,14 @@
 - 
     <div align="left"><img src="https://img.shields.io/badge/[Python]-pandas / matplotlib / seaborn-4479A1"/>
     <img src="https://img.shields.io/badge/[data visualization]-catplot / histplot / lineplot / heatmap / pie-FF6600"/><br>  
+
+####
+### Contents
+- financial review - 2020년도 한 해의 월별 ・ 분기별 / 요일별 / 카테고리별 / 서브 카테고리별 매출 현황 파악
+- retention review - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
+- action item - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
+<div align="left"><img src="https://user-images.githubusercontent.com/109773795/227499159-e6d57146-f709-4c0b-a22d-b61690ca114f.png" width="425" height="430"/><img src="https://user-images.githubusercontent.com/109773795/227499316-cb13ab42-35bd-4c25-8519-3805c5db9ce2.png" width="425" height="430"/><br>
+<img src="https://user-images.githubusercontent.com/109773795/227498356-e3929c40-f4a7-4fc0-bec2-f59dd01a0a3a.png" width="850" height="300"/>
 
 ####
 ### Afterthoughts
