@@ -21,6 +21,8 @@
 - 01_window_function_sum_221028
 - 02_window_function_dense_rank_221028
 - 03_window_function_session_lag_n_lead_221028
+#### ► [05_mysql_project]
+- E-commerce Annual Report
 ####
 ## Reference
 - [datarian] SQL 데이터 분석 캠프 실전반
