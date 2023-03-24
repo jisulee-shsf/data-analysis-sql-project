@@ -1,5 +1,5 @@
 ####
-## 02. 데이터 분석 캠프 week2
+## 데이터 분석 캠프 week2
 #### ► [01_classic_retention_221014 / 02_rolling_retention_221014]
 - 그로스 해킹(Growth Hacking) ・ AARRR 해적 지표(Pirate Metrics) ・ 코호트 분석(Cohort Analysis) 등 리텐션 관련 이론 학습
 - SQL을 활용한 클래식 리텐션(Classic Retention) ・ 롤링 리텐션(Rolling Retention) 계산 실습
