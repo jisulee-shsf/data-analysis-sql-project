@@ -1,6 +1,6 @@
 ####
-## Objectives ・ Contents
-- financial review - 2020년도 한 해의 월별 ・ 분기별 / 요일별 / 카테고리별 / 서브 카테고리별 매출 현황 보고
+## Objectives
+- financial review - 2020년도 한 해의 월별 ・ 분기별 / 요일별 / 카테고리별 / 서브 카테고리별 매출 현황 파악
 - retention review - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
 - action item - 첫 결제 시기별 cohort 구분 및 결제 로그 기준의 retention 계산 → cohort별 retention 비교
 ####
