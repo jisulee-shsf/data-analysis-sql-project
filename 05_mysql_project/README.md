@@ -1,7 +1,7 @@
 ####
 # E-commerce Annual Report
 ### Objectives
-- MySQL을 통한 데이터 추출 후, 데이터 분석 방법에 기반한 논지 전개 및 action item 도출
+- MySQL을 통한 데이터 추출 후, 데이터 분석 방법을 이용한 논지 전개 및 action item 도출
 - Python 라이브러리를 활용한 다양한 data visualization 진행
 ####
 ### Skills
