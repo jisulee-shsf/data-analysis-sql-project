@@ -22,8 +22,8 @@
 - 02_window_function_dense_rank_221028
 - 03_window_function_session_lag_n_lead_221028
 #### ► [05_mysql_project] 
-- 2022.11.07(월) ~ 2022.11.20(일) 🔗 [E-commerce Annual Report](https://drive.google.com/file/d/1z43GXRQuZWDrVYGsZIYWUYBevB-XLG-B/view?usp=share_link) 프로젝트 진행
-- MySQL과 Python을 활용한 annual report 형식의 개인 프로젝트
+- 2022.11.07.~2022.11.20. | 🔗 [E-commerce Annual Report](https://drive.google.com/file/d/1z43GXRQuZWDrVYGsZIYWUYBevB-XLG-B/view?usp=share_link) 개인 프로젝트 진행
+- MySQL(데이터 추출 및 분석)과 Python(데이터 시각화)을 활용한 annual report 작성
 - 추출 데이터에 기반한 매출 현황 파악 및 cohort별 classic retention & rolling retention 분석 진행
 ####
 ## Reference
