@@ -7,7 +7,7 @@
 ### Skills
 -
     <div align="left"><img src="https://img.shields.io/badge/[MySQL]-JOIN / GROUP BY / Pivot Table / SubQuery / Window Functions 외 다수-4479A1"/>
-    <img src="https://img.shields.io/badge/[data analysis]- AARRR / classic ・ rolling retention / cohort / correlation-FF6600"/><br>
+    <img src="https://img.shields.io/badge/[data analysis]- AARRR / classic retention & rolling retention / cohort / correlation-FF6600"/><br>
 - 
     <div align="left"><img src="https://img.shields.io/badge/[Python]-pandas / matplotlib / seaborn-4479A1"/>
     <img src="https://img.shields.io/badge/[data visualization]-catplot / histplot / lineplot / heatmap / pie-FF6600"/><br>  
