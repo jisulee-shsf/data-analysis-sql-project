@@ -1,5 +1,5 @@
 ####
-## 데이터 분석 캠프 week3
+## 📌 데이터 분석 캠프 week3
 #### ► [01_funnel_analysis_01_221021 / 02_funnel_analysis_02_221021]
 - 퍼널 분석(Funnel Analysis) ・ UTM(Urchin Tracking Module) ・ 세션(Session) 관련 이론 학습
 - SQL을 활용해 세션별 퍼널 전환율(Conversion Rate) 계산을 통해 퍼널 분석 실습
